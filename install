@@ -1,0 +1,45 @@
+#!/bin/bash
+
+bwhite='\033[1;97m' #bold white
+yello='\e[93m'
+NC='\e[0m'        # No Color
+
+
+echo -e "${bwhite}${yello}~~{installing golang}~~${NC}"
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.2.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+
+
+echo -e "${bwhite}${yello}~~{installing nmap}~~${NC}"
+sudo apt install nmap
+
+echo -e "${bwhite}${yello}~~{installing subzy}~~${NC}"
+sudo go install github.com/lukasikic/subzy@latest
+
+echo -e "${bwhite}${yello}~~{installing assetfinder}~~${NC}"
+go install github.com/tomnomnom/assetfinder@latest
+
+echo -e "${bwhite}${yello}~~{installing subfinder}~~${NC}"
+GO111MODULE=on go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+echo -e "${bwhite}${yello}~~{installing waybackurls}~~${NC}"
+go install github.com/tomnomnom/waybackurls@latest
+
+echo -e "${bwhite}${yello}~~{installing gf}~~${NC}"
+go install github.com/tomnomnom/gf@latest
+cp /root/go/bin/gf /usr/local/go/bin/
+
+echo -e "${bwhite}${yello}~~{installing urlprobe}~~${NC}"
+go install github.com/1ndianl33t/urlprobe@latest
+
+echo -e "${bwhite}${yello}~~{installing httprobe}~~${NC}"
+go install github.com/tomnomnom/httprobe@latest
+
+echo -e "${bwhite}${yello}~~{installing nuclei}~~${NC}"
+GO111MODULE=on go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
+echo -e "${bwhite}${yello}fetching files${NC}"
+echo -e "${bwhite}${yello}DONE!${NC}"
+
+
+
