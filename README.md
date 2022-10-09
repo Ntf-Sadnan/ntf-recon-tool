@@ -1,5 +1,5 @@
-# ntf
-an advanced tool for recon!🔥 You can find vulnerabilities in just 5 minutes by just giving the domain name👀
+# NTF
+An advanced Recon Tool !🔥 You can find vulnerabilities in just 5 minutes by just giving the domain name👀
 
  😉
 🦉The tool can :
