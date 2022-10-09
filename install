@@ -27,7 +27,7 @@ go install github.com/tomnomnom/waybackurls@latest
 
 echo -e "${bwhite}${yello}~~{installing gf}~~${NC}"
 go install github.com/tomnomnom/gf@latest
-cp /root/go/bin/gf /usr/local/go/bin/
+cp $HOME/go/bin/gf /usr/local/go/bin/
 
 echo -e "${bwhite}${yello}~~{installing urlprobe}~~${NC}"
 go install github.com/1ndianl33t/urlprobe@latest
