@@ -35,6 +35,7 @@ chmod +x *
 ```
 
 # RunMe
+NOTE: run as super user always!
 ```bash
 ./ntf
 ```
