@@ -38,6 +38,9 @@ go install github.com/tomnomnom/httprobe@latest
 echo -e "${bwhite}${yello}~~{installing nuclei}~~${NC}"
 GO111MODULE=on go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
+echo -e "${bwhite}${yello}~~{installing figlet}~~${NC}"
+sudo apt-get install figlet
+
 echo -e "${bwhite}${yello}fetching files${NC}"
 echo -e "${bwhite}${yello}DONE!${NC}"
 
