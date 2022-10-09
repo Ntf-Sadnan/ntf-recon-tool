@@ -15,3 +15,15 @@ An advanced Recon Tool !🔥 You can find vulnerabilities in just 5 minutes by j
 5. scan using Nmap {both in deep or in surface} 
 
 🦉🔥👀
+
+# Installation
+
+` sudo su `   
+` git clone https://github.com/Ntf-Sadnan/ntf.git `
+` cd ntf`
+` chmod +x * `
+` ./install `
+
+# To run
+
+` ./ntf `
