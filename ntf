@@ -167,7 +167,7 @@ done
 
 printf ${bwhite}${yello}
 figlet ~Finished Tasks~
-
+printf ${NC}
 
 
 
