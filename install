@@ -15,7 +15,7 @@ echo -e "${bwhite}${yello}~~{installing nmap}~~${NC}"
 sudo apt install nmap
 
 echo -e "${bwhite}${yello}~~{installing subzy}~~${NC}"
-sudo go install github.com/lukasikic/subzy@latest
+go install github.com/lukasikic/subzy@latest
 
 echo -e "${bwhite}${yello}~~{installing assetfinder}~~${NC}"
 go install github.com/tomnomnom/assetfinder@latest
