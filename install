@@ -37,6 +37,7 @@ echo -e "${bwhite}${yello}~~{installing httprobe}~~${NC}"
 go install github.com/tomnomnom/httprobe@latest
 
 echo -e "${bwhite}${yello}~~{installing nuclei}~~${NC}"
+export PATH=$PATH:/usr/local/go/bin
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
 echo -e "${bwhite}${yello}~~{installing figlet}~~${NC}"
