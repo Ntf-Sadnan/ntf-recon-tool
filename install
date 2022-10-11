@@ -43,6 +43,7 @@ echo -e "${bwhite}${yello}~~{installing figlet}~~${NC}"
 sudo apt-get install figlet
 
 echo -e "${bwhite}${yello}fetching files${NC}"
+rm go1.19.2.linux-amd64.tar.gz
 echo -e "${bwhite}${yello}DONE!${NC}"
 
 
