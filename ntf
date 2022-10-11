@@ -132,7 +132,7 @@ while true; do
 	case $cv in
 		[Yy]* ) echo -e "${green}[*] testing for ${yello}CVEs${NC}" ;
 			cat subdomains.txt | $HOME/go/bin/httprobe | sort -u > httprobeCVE.txt ;
-			nuclei -l httprobeCVE.txt -t $HOME/.local/nuclei-templates/cves/ | tee cve_test.txt ; 
+			nuclei -l httprobeCVE.txt -t $HOME/nuclei-templates/cves/ | tee cve_test.txt ; 
 			break ;;
 		[Nn]* ) break ;;
 		* ) echo -e "${bwhite}${onred}~Yes or No~${NC}" ;;
