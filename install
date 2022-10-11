@@ -28,6 +28,11 @@ go install github.com/tomnomnom/waybackurls@latest
 
 echo -e "${bwhite}${yello}~~{installing gf}~~${NC}"
 go install github.com/tomnomnom/gf@latest
+git clone https://github.com/tomnomnom/gf.git
+git clone https://github.com/1ndianl33t/Gf-Patterns.git
+mkdir /root/.gf
+cp gf/examples/* /root/.gf
+cp Gf-Patterns/* /root/.gf
 cp $HOME/go/bin/gf /usr/local/go/bin/
 
 echo -e "${bwhite}${yello}~~{installing urlprobe}~~${NC}"
@@ -45,6 +50,7 @@ sudo apt-get install figlet
 
 echo -e "${bwhite}${yello}fetching files${NC}"
 rm go1.19.2.linux-amd64.tar.gz
+rm -r Gf-Patterns gf
 echo -e "${bwhite}${yello}DONE!${NC}"
 
 
